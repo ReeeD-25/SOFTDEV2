@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptiCore</title>
-     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Smart Study Load - Intelligent Learning Management</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">OptiCore (Smart Study Load)</div>
+        <div class="logo">Smart Study Load</div>
         <ul class="nav-links">
             <li><a href="#planner">Planner</a></li>
-            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
         <div class="nav-buttons">
             <button class="toggle-btn" onclick="toggleDarkMode()">
-                <i class="fas fa-moon"></i> Dark Mode
+                🌙 Dark Mode
             </button>
         </div>
     </nav>
@@ -46,10 +45,10 @@
         <!-- Tabs -->
         <div class="tab-buttons">
             <button class="tab-btn active" onclick="switchTab(event, 'tab-detailed')">
-                <i class="fas fa-tasks"></i> Detailed Task Planner
+                ✓ Detailed Task Planner
             </button>
             <button class="tab-btn" onclick="switchTab(event, 'tab-quick')">
-                <i class="fas fa-bolt"></i> Quick Scheduler
+                ⚡ Quick Scheduler
             </button>
         </div>
 
@@ -58,7 +57,7 @@
             <div class="planner-grid">
                 <!-- Input Form -->
                 <div class="card">
-                    <h3><i class="fas fa-plus-circle"></i> Add New Task</h3>
+                    <h3>➕ Add New Task</h3>
                     <form id="taskForm" onsubmit="addTask(event)">
                         <div class="form-group">
                             <label>Task Name</label>
@@ -96,7 +95,7 @@
                         </div>
 
                         <button type="submit" class="btn-submit">
-                            <i class="fas fa-plus"></i> Add Task
+                            ➕ Add Task
                         </button>
                     </form>
                 </div>
@@ -119,7 +118,7 @@
                     </div>
 
                     <div class="card">
-                        <h3><i class="fas fa-list"></i> Your Tasks</h3>
+                        <h3>📋 Your Tasks</h3>
                         <div id="tasksList" class="items-list">
                             <div class="empty-state">No tasks yet. Add your first task to get started!</div>
                         </div>
@@ -129,7 +128,7 @@
 
             <!-- Schedule -->
             <div class="card">
-                <h3><i class="fas fa-calendar-check"></i> Smart Schedule</h3>
+                <h3>📅 Smart Schedule</h3>
                 <div id="schedulePlan" class="schedule-container">
                     <div class="empty-state">Add tasks to generate your personalized schedule</div>
                 </div>
@@ -143,7 +142,7 @@
             <div class="planner-grid">
                 <!-- Input Form -->
                 <div class="card">
-                    <h3><i class="fas fa-plus-circle"></i> Add Subject</h3>
+                    <h3>➕ Add Subject</h3>
                     <div class="form-group">
                         <label>Subject Name</label>
                         <input type="text" id="subject" placeholder="e.g., Mathematics">
@@ -165,17 +164,17 @@
 
                     <div class="btn-group">
                         <button class="btn-submit" onclick="addSubject()">
-                            <i class="fas fa-plus"></i> Add Subject
+                            ➕ Add Subject
                         </button>
                         <button class="btn-submit btn-secondary" onclick="resetPlan()">
-                            <i class="fas fa-redo"></i> Reset
+                            🔄 Reset
                         </button>
                     </div>
                 </div>
 
                 <!-- Subjects List -->
                 <div class="card">
-                    <h3><i class="fas fa-book"></i> Your Subjects</h3>
+                    <h3>📚 Your Subjects</h3>
                     <div id="subjects" style="display: flex; flex-wrap: wrap; gap: 1rem;">
                         <div class="empty-state">No subjects added yet. Start by adding your first subject!</div>
                     </div>
@@ -184,7 +183,7 @@
 
             <!-- Quick Schedule -->
             <div class="card">
-                <h3><i class="fas fa-chart-bar"></i> Daily Study Load</h3>
+                <h3>📊 Daily Study Load</h3>
                 <div id="schedule" class="schedule-container">
                     <div class="empty-state">Your study schedule will appear here</div>
                 </div>
@@ -192,15 +191,68 @@
                 <div id="motivation" class="motivation-message" style="display: none;"></div>
             </div>
         </div>
-
-
-        <div>
-
-
-        </div>
     </section>
 
+    <!-- About OptiCore Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2>About OptiCore</h2>
+                    <p class="tagline">"Where Intelligence Meets Academic Efficiency"</p>
+                </div>
+
+                <div class="about-text">
+                    <p>OptiCore is a smart study load optimization platform that applies algorithmic scheduling techniques to generate efficient and balanced academic timetables. The system evaluates user-defined constraints such as subject weight, task urgency, and available study hours to compute an optimized distribution of workload.</p>
+
+                    <p>Designed with a system-oriented architecture, OptiCore aims to reduce cognitive overload, improve time management, and enhance academic productivity through intelligent automation.</p>
+                </div>
+
+                <div class="features-highlight">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-text">
+                            <h4>Algorithmic Optimization</h4>
+                            <p>Advanced scheduling techniques ensure balanced workload distribution</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <div class="highlight-icon">⚡</div>
+                        <div class="highlight-text">
+                            <h4>Cognitive Load Management</h4>
+                            <p>Reduces mental fatigue through intelligent task prioritization</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📈</div>
+                        <div class="highlight-text">
+                            <h4>Academic Productivity</h4>
+                            <p>Enhances learning outcomes through optimized study schedules</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stats-item">
+                    <div class="stats-number">100%</div>
+                    <div class="stats-text">Personalized Scheduling</div>
+                </div>
+                <div class="stats-item">
+                    <div class="stats-number">24/7</div>
+                    <div class="stats-text">Available Anytime</div>
+                </div>
+                <div class="stats-item">
+                    <div class="stats-number">∞</div>
+                    <div class="stats-text">Scalable for All</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
-     
+
+    
 </body>
 </html>
