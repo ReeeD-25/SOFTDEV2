@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Study Load - Intelligent Learning Management</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>OptiCore</title>
+    <link rel="icon" type="image/x-icon" href="LOGO.png">
     <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">Smart Study Load</div>
+        <div class="logo">OptiCore - Smart Study Load</div>
         <ul class="nav-links">
-            <li><a href="#planner">Planner</a></li>
-            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#planner">Planner</a></li>
+            <li><a href="#about">About</a></li> -->
         </ul>
         <div class="nav-buttons">
             <button class="toggle-btn" onclick="toggleDarkMode()">
@@ -26,11 +26,11 @@
     <!-- Hero Section -->
     <section class="hero" id="planner">
         <div class="hero-content">
-            <h1>Master Your <span>Study Load</span> Intelligently</h1>
-            <p>Add your tasks and subjects. Our smart AI automatically generates an optimized study schedule, helping you manage your workload efficiently and achieve your goals.</p>
+            <h1>Study <span>Smarter.</span> </br>Not <span>Harder.</span></h1> 
+            <p>Add your tasks and subjects. This website automatically generates an optimized study schedule, helping you manage your workload efficiently and achieve your goals.</p>
             <div class="hero-buttons">
                 <button class="primary-btn" onclick="scrollToPlanner()">Start Planning</button>
-                <button class="secondary-btn">Learn More</button>
+                <a href="#about"><button class="secondary-btn">Learn More</button></a>
             </div>
         </div>
     </section>
@@ -39,16 +39,16 @@
     <section class="planner-section">
         <div class="section-title">
             <h2>Smart Study Planner</h2>
-            <p>Choose your planning style and let AI create your perfect schedule</p>
+            <p>Choose your planning style and let this website create your perfect schedule</p>
         </div>
 
         <!-- Tabs -->
         <div class="tab-buttons">
             <button class="tab-btn active" onclick="switchTab(event, 'tab-detailed')">
-                ✓ Detailed Task Planner
+                📅 Detailed Task Planner
             </button>
             <button class="tab-btn" onclick="switchTab(event, 'tab-quick')">
-                ⚡ Quick Scheduler
+                ⏱ Quick Scheduler
             </button>
         </div>
 
@@ -57,16 +57,16 @@
             <div class="planner-grid">
                 <!-- Input Form -->
                 <div class="card">
-                    <h3>➕ Add New Task</h3>
+                    <h3>📝 Add New Task</h3>
                     <form id="taskForm" onsubmit="addTask(event)">
                         <div class="form-group">
                             <label>Task Name</label>
-                            <input type="text" id="taskName" placeholder="e.g., Math Assignment" required>
+                            <input type="text" id="taskName" placeholder="e.g., Midterm Project" required>
                         </div>
 
                         <div class="form-group">
                             <label>Course/Subject</label>
-                            <input type="text" id="course" placeholder="e.g., Mathematics" required>
+                            <input type="text" id="course" placeholder="e.g., Software Development 2" required>
                         </div>
 
                         <div class="form-group">
@@ -76,16 +76,16 @@
 
                         <div class="form-group">
                             <label>Estimated Hours</label>
-                            <input type="number" id="estimatedHours" placeholder="e.g., 3" min="0.5" step="0.5" required>
+                            <input type="number" id="estimatedHours" placeholder="e.g., 1 hr" min="0.5" step="0.5" required>
                         </div>
 
                         <div class="form-group">
                             <label>Priority Level</label>
                             <select id="priority" required>
                                 <option value="">Select Priority</option>
-                                <option value="high">High (Exam, Major Assignment)</option>
+                                <option value="high">High (Exam, Major Project)</option>
                                 <option value="medium">Medium (Regular Homework)</option>
-                                <option value="low">Low (Optional, Extra Credit)</option>
+                                <option value="low">Low (Basic Assignments)</option>
                             </select>
                         </div>
 
@@ -95,7 +95,7 @@
                         </div>
 
                         <button type="submit" class="btn-submit">
-                            ➕ Add Task
+                            📝 Add Task
                         </button>
                     </form>
                 </div>
@@ -142,10 +142,10 @@
             <div class="planner-grid">
                 <!-- Input Form -->
                 <div class="card">
-                    <h3>➕ Add Subject</h3>
+                    <h3>📝 Add Subject</h3>
                     <div class="form-group">
                         <label>Subject Name</label>
-                        <input type="text" id="subject" placeholder="e.g., Mathematics">
+                        <input type="text" id="subject" placeholder="e.g., Software Development 2">
                     </div>
 
                     <div class="form-group">
@@ -174,7 +174,10 @@
 
                 <!-- Subjects List -->
                 <div class="card">
-                    <h3>📚 Your Subjects</h3>
+                    <h3>📚 Your Subjects
+                        <br>Easy = 😎 Medium = ⚔️ Hard = 🔥
+                    </h3>
+                    
                     <div id="subjects" style="display: flex; flex-wrap: wrap; gap: 1rem;">
                         <div class="empty-state">No subjects added yet. Start by adding your first subject!</div>
                     </div>
@@ -210,26 +213,25 @@
 
                 <div class="features-highlight">
                     <div class="highlight-item">
-                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-icon">👨🏻‍💻</div>
                         <div class="highlight-text">
-                            <h4>Algorithmic Optimization</h4>
-                            <p>Advanced scheduling techniques ensure balanced workload distribution</p>
+                            <h4>Cram Mode Disabled</h4>
+                            <p>A Smart Study Load for students like me who likes to cram</p>
                         </div>
                     </div>
 
                     <div class="highlight-item">
-                        <div class="highlight-icon">⚡</div>
+                        <div class="highlight-icon">🚨</div>
                         <div class="highlight-text">
-                            <h4>Cognitive Load Management</h4>
-                            <p>Reduces mental fatigue through intelligent task prioritization</p>
+                            <h4>Urgency Radar</h4>
+                            <p>Knows which task is actually on fire.</p>
                         </div>
                     </div>
-
-                    <div class="highlight-item">
-                        <div class="highlight-icon">📈</div>
+                     <div class="highlight-item">
+                        <div class="highlight-icon">🏫</div>
                         <div class="highlight-text">
-                            <h4>Academic Productivity</h4>
-                            <p>Enhances learning outcomes through optimized study schedules</p>
+                            <h4>Cebu Technological University</h4>
+                            <p>A premier, state-funded higher education institution in the Philippines (established 1911) with over 24 campuses and extension sites in Cebu province.</p>
                         </div>
                     </div>
                 </div>
@@ -237,16 +239,17 @@
 
             <div class="about-stats">
                 <div class="stats-item">
-                    <div class="stats-number">100%</div>
-                    <div class="stats-text">Personalized Scheduling</div>
+                    <div class="stats-number">100% Should work</div>
+                    <div class="stats-text">I used to schedule my life emotionally. Now it’s mathematically optimized.
+— A Stressed Student</div>
                 </div>
                 <div class="stats-item">
                     <div class="stats-number">24/7</div>
-                    <div class="stats-text">Available Anytime</div>
+                    <div class="stats-text">Available Anytime. (Pahuway Brah joke ranang available anytime). </div>
                 </div>
                 <div class="stats-item">
-                    <div class="stats-number">∞</div>
-                    <div class="stats-text">Scalable for All</div>
+                    <div class="stats-number">Stop cramming</div>
+                    <div class="stats-text">3AM regrets no more? Random study hours? Panic-based prioritization? Big No.</div>
                 </div>
             </div>
         </div>
