@@ -227,7 +227,7 @@
                 return;
             }
             subjectDiv.innerHTML = subjects.map((sub, index) => {
-                const icons = { 1: '⭐', 2: '⭐⭐', 3: '⭐⭐⭐' };
+                const icons = { 1: '😎', 2: '⚔️', 3: '🔥' };
                 const colors = { 1: '#10b981', 2: '#f59e0b', 3: '#ef4444' };
                 return `
                     <div style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; background: linear-gradient(135deg, rgba(13, 126, 126, 0.1) 0%, rgba(26, 159, 160, 0.1) 100%); border: 2px solid rgba(13, 126, 126, 0.2); border-radius: 50px; font-size: 0.95rem; font-weight: 600; color: var(--primary); animation: fadeIn 0.4s ease; animation-delay: ${index * 0.1}s;">
